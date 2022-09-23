@@ -9,11 +9,8 @@ $police1 : 'Source Sans Pro',
 sans-serif;
 
 // images // 
-$image1 : 
-$image2 : 
-$image3 :
-$image4 : 
-
+$image1 : "https://cdn.wallpapersafari.com/70/57/lLvfYN.jpg";
+$image2 : 'https://html5up.net/uploads/demos/escape-velocity/images/pic01.jpg';
 
 // hauteur
 @for $i from 0 through 1000 {
@@ -235,11 +232,11 @@ $image4 :
     font-weight: 900;
 }
 
- // marge //
+// marge //
 @for $i from 0 to 100 {
-.margin-#{$i} {
-    margin: $i *1%;
-}
+    .margin-#{$i} {
+        margin: $i *1%;
+    }
 }
 
 // padding // 
@@ -247,6 +244,15 @@ $image4 :
     .padding-#{$i} {
         padding: $i *1%;
     }
+}
+
+// images //
+.image-1 {
+    background-image: $image1;
+}
+
+.image-2 {
+    background-image: $image2;
 }
 
 
@@ -257,6 +263,7 @@ $image4 :
 .bordure-blanche {
     border: 0.2vw solid white;
 }
+
 body {
     margin: 0px;
     padding: 0px;
@@ -415,7 +422,7 @@ body {
 
 .image1 {
     height: 50vh;
-    background-image: url(https://html5up.net/uploads/demos/escape-velocity/images/pic01.jpg);
+    background-image: url('https://html5up.net/uploads/demos/escape-velocity/images/pic01.jpg');
     width: 90vw;
 }
 
