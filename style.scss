@@ -3,7 +3,8 @@ $couleur1 : rgb(47, 51, 59);
 $couleur2 : #919499;
 $couleur3 : rgb(233, 119, 112);
 $couleur4 : white;
-
+$couleur5 : #ece8e8;
+        
 // polices //
 $police1 : 'Source Sans Pro',
 sans-serif;
@@ -173,6 +174,10 @@ body {
     background-color: $couleur4;
 }
 
+.fond-couleur-5 {
+    background-color: $couleur5;
+}
+
 // Differents display flex //
 .flex-col-centrer {
     display: flex;
@@ -273,9 +278,13 @@ body {
 }
 
 // traitement de texte //
-.gras {
-    font-weight: 900;
+@for $i from 0 to 20 {
+    .gras-#{$i} {
+        font-weight: $i *100;
+    }
 }
+
+
 
 .centrer-texte {
     text-align: center;
@@ -292,6 +301,13 @@ body {
 @for $i from 0 to 100 {
     .margin-droite-#{$i} {
         margin-right: $i *1%;
+    }
+}
+
+// marge en bas //
+@for $i from 0 to 100 {
+    .margin-bot-#{$i} {
+        margin-bottom: $i *1vh;
     }
 }
 
